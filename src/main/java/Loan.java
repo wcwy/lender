@@ -3,8 +3,12 @@ public class Loan {
     private int amount;
     private boolean isPaid;
     private double interestRate;
-
+    private static int maxLoanValue;
     static private double maxLoanAmount;
+
+    public static int getMaxLoanValue() {
+        return maxLoanValue;
+    }
 
     public static double getMaxLoanAmount() {
         return maxLoanAmount;
